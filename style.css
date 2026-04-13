@@ -510,9 +510,11 @@ ul  { list-style: none; }
 }
 .menu-section__layout {
   display: grid;
-  grid-template-columns: 1fr 1.2fr;
-  gap: 64px;
+  grid-template-columns: 1fr;
+  gap: 40px;
   align-items: start;
+  max-width: 680px;
+  margin: 0 auto;
 }
 .menu-section__img {
   border-radius: var(--radius);
@@ -917,10 +919,7 @@ ul  { list-style: none; }
   .feature__hero {
     padding: 0 32px;
   }
-  .menu-section__layout {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
+
   .access__layout {
     grid-template-columns: 1fr;
   }
