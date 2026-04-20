@@ -977,6 +977,10 @@ ul  { list-style: none; }
     gap: 16px;
   }
   .feature__card-img { height: 150px; }
+  .feature__card-desc {
+    font-size: .75rem;
+    line-height: 1.7;
+  }
 
   /* メニュー */
   .menu-section { padding: 80px 0; }
