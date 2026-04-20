@@ -980,6 +980,11 @@ ul  { list-style: none; }
     padding: 0 24px;
     gap: 32px;
   }
+  .feature__hero-desc {
+    font-size: .82rem;
+    line-height: 1.8;
+    margin-bottom: 24px;
+  }
   .feature__hero-img { height: 280px; }
   .feature__grid {
     grid-template-columns: 1fr 1fr;
