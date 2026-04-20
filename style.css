@@ -972,11 +972,11 @@ ul  { list-style: none; }
   }
   .feature__hero-img { height: 280px; }
   .feature__grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     padding: 0 24px;
-    gap: 16px;
+    gap: 24px;
   }
-  .feature__card-img { height: 150px; }
+  .feature__card-img { height: 220px; }
   .feature__card-desc {
     font-size: .75rem;
     line-height: 1.7;
