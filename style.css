@@ -946,7 +946,7 @@ ul  { list-style: none; }
   /* ヒーロー */
   .hero__title-pc { display: none; }
   .hero__title-sp { display: block; }
-  .hero__title { font-size: 1.8rem; }
+  .hero__title { font-size: 1.55rem; line-height: 1.4; }
 
   /* コンセプト */
   .concept__inner {
