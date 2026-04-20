@@ -77,22 +77,17 @@ ul  { list-style: none; }
 
 /* ロゴ */
 .header__logo {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.1;
-  letter-spacing: .1em;
+  display: block;
+  transition: opacity var(--trans);
 }
-.header__logo-jp {
-  font-family: var(--serif);
-  font-size: .65rem;
-  color: var(--accent);
-  font-weight: 400;
+.header__logo:hover {
+  opacity: .8;
 }
-.header__logo-main {
-  font-family: var(--serif);
-  font-size: 1.25rem;
-  color: var(--white);
-  font-weight: 600;
+.header__logo-img {
+  height: 44px;
+  width: auto;
+  object-fit: contain;
+  vertical-align: middle;
 }
 
 /* ナビ */
@@ -839,22 +834,12 @@ ul  { list-style: none; }
 }
 .footer__logo {
   text-align: center;
+  margin-bottom: 20px;
 }
-.footer__logo-jp {
-  display: block;
-  font-family: var(--serif);
-  font-size: .7rem;
-  letter-spacing: .15em;
-  color: var(--accent);
-}
-.footer__logo-main {
-  display: block;
-  font-family: var(--serif);
-  font-size: 1.6rem;
-  font-weight: 600;
-  color: var(--warm);
-  letter-spacing: .12em;
-  margin-bottom: 8px;
+.footer__logo-img {
+  max-width: 160px;
+  height: auto;
+  margin-bottom: 16px;
 }
 .footer__catch {
   font-family: var(--serif);
