@@ -1011,6 +1011,14 @@ ul  { list-style: none; }
   .footer__nav ul { gap: 16px; }
 }
 
+.sp-br { display: none; }
+.pc-br { display: inline; }
+
+@media (max-width: 768px) {
+  .sp-br { display: inline; }
+  .pc-br { display: none; }
+}
+
 @media (max-width: 480px) {
   .feature__grid { grid-template-columns: 1fr; }
   .feature__card-img { height: 200px; }
