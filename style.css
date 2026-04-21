@@ -295,10 +295,10 @@ ul  { list-style: none; }
 }
 .concept__catch {
   font-family: var(--serif);
-  font-size: .98rem;
+  font-size: .95rem;
   color: var(--warm);
   line-height: 2;
-  letter-spacing: .1em;
+  letter-spacing: .02em;
   border-left: 2px solid var(--accent);
   padding-left: 16px;
 }
