@@ -544,6 +544,9 @@ ul  { list-style: none; }
   margin-top: 24px;
   padding-left: 10px;
 }
+.menu-category__more .menu-item__name {
+  font-size: .85rem;
+}
 .menu-category__items li {
   display: flex;
   flex-direction: column;
