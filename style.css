@@ -282,7 +282,7 @@ ul  { list-style: none; }
   margin-bottom: 32px;
 }
 .concept__body {
-  font-size: .98rem;
+  font-size: .92rem;
   line-height: 2.2;
   color: rgba(232,213,176,.75);
   margin-bottom: 32px;
@@ -295,7 +295,7 @@ ul  { list-style: none; }
 }
 .concept__catch {
   font-family: var(--serif);
-  font-size: 1.05rem;
+  font-size: .98rem;
   color: var(--warm);
   line-height: 2;
   letter-spacing: .1em;
