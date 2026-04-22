@@ -20,21 +20,30 @@ document.addEventListener('DOMContentLoaded', () => {
   ────────────────────────────── */
   const hamburger = document.getElementById('hamburger');
   const nav       = document.getElementById('nav');
-
-  hamburger.addEventListener('click', () => {
-    const isOpen = hamburger.classList.toggle('open');
+  const setMenuState = (isOpen) => {
+    hamburger.classList.toggle('open', isOpen);
     nav.classList.toggle('open', isOpen);
+    header.classList.toggle('nav-open', isOpen);
+    hamburger.setAttribute('aria-expanded', String(isOpen));
     hamburger.setAttribute('aria-label', isOpen ? 'メニューを閉じる' : 'メニューを開く');
     document.body.style.overflow = isOpen ? 'hidden' : '';
+  };
+
+  hamburger.addEventListener('click', () => {
+    setMenuState(!hamburger.classList.contains('open'));
   });
 
   // ナビリンクをクリックしたら閉じる
   nav.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
-      hamburger.classList.remove('open');
-      nav.classList.remove('open');
-      document.body.style.overflow = '';
+      setMenuState(false);
     });
+  });
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 768 && hamburger.classList.contains('open')) {
+      setMenuState(false);
+    }
   });
 
 
